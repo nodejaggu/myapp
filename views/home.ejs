@@ -15,7 +15,13 @@
 
     <!-- Material Design Bootstrap -->
    <link href="https://mdbootstrap.com/previews/docs/latest/css/mdb.min.css" rel="stylesheet">
-   
+   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5P2TKDR');</script>
+<!-- End Google Tag Manager -->
 </head>
 <!-- Nav bar-->
 <body class="fixed-sn light-blue-skin">
@@ -126,14 +132,16 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/mdb.min.js"></script> 
     
-    <script type="text/javascript">
-        var _taq = {"id":"9e50dc72-5f81-4194-8437-d2587c1e0d74","events":[],"identify":[],"property":[], "handlers":[]};
-        (function() {
-            var ta = document.createElement('script'); ta.type = 'text/javascript'; ta.async = true; ta.id = "__ta";
-            ta.src = '//cdn-jp.gsecondscreen.com/static/ta.min.js';
-            var fs = document.getElementsByTagName('script')[0]; fs.parentNode.insertBefore(ta, fs);
-        })();
-    </script>
+<script type="text/javascript">
+    var _taq = {"id":"107a3b41-1aa3-45c6-a324-f0399a2aa2af","events":[],"identify":[],"property":[], "handlers":[]};
+    (function() {
+        var ta = document.createElement('script'); ta.type = 'text/javascript'; ta.async = true; ta.id = "__ta";
+        ta.src = '//cdn-jp.gsecondscreen.com/static/tac.min.js';
+        var fs = document.getElementsByTagName('script')[0]; fs.parentNode.insertBefore(ta, fs);
+    })();
+</script>
+
+
 
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 <script>
@@ -148,5 +156,17 @@
   };
   firebase.initializeApp(config);
 </script>
+dataLayer = [{
+    'event':'before_gtm',
+    'key':'property'
+    }];
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P2TKDR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+dataLayer.push({
+    'event':'after_gtm',
+    'key':'property'
+})
 </body>
 </html>
