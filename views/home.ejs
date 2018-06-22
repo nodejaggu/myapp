@@ -154,9 +154,9 @@ dataLayer = [{
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P2TKDR"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-dataLayer.push({
-    'event':'after_gtm',
-    'key':'property'
-})
+window.dataLayer = window.dataLayer || [];
+ window.dataLayer.push({
+ 'event': 'registrationComplete'
+ });
 </body>
 </html>
