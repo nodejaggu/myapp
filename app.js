@@ -385,6 +385,12 @@ app.get('/admin',function(req,res,mydata){
 	
 });
 
+app.get('/gamooga/testing',function(req,res){
+	var userData = req.mydata;
+	res.render('home');
+	
+});
+
 app.get('/view/:id',function(req,res){
 	var formData = req.body.datefilter;
 	var id = req.params.id;
